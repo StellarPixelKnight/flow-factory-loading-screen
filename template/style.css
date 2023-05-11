@@ -1,0 +1,25 @@
+
+body {
+
+    margin: 0;
+
+    overflow: hidden;
+
+}
+
+
+#loadingVideo {
+
+    position: fixed;
+
+    min-width: 100%;
+
+    min-height: 100%;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
