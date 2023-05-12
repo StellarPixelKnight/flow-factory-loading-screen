@@ -1,31 +1,45 @@
+<!-- The document type declaration for HTML5 -->
 <!DOCTYPE html>
-
+<!-- Root element with language attribute set to English -->
 <html lang="en">
 
+<!-- Head section containing meta tags, title, and stylesheet link -->
+
 <head>
-
+    <!-- Meta tag defining the character encoding used in this document (UTF-8) -->
     <meta charset="UTF-8">
-
+    <!-- Meta tag specifying the viewport settings for a responsive layout -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Title of the webpage -->
     <title>Loading Screen</title>
-
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
+<!-- Body section containing video, content, and script elements -->
+
 <body>
+    <!-- Video element inside container playing a video during the loading process -->
+    <div class="video-container">
+        <video id="loadingVideo" autoplay muted playsinline loop> <!-- Added 'loop' attribute -->
+            <!-- Source element linking to an MP4 video file -->
+            <source src="your-video.mp4" type="video/mp4">
+            <!-- Fallback text displayed if the browser doesn't support the video tag -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <video id="loadingVideo" autoplay muted playsinline>
+    <!-- Content to be displayed during the loading process -->
+    <!-- Add your content here (for example, a loading message or spinner)-->
+    <div class="content">
+        <!-- Heading element displaying the "Loading..." text -->
+        <h1>Loading...</h1>
+    </div>
 
-        <source src="your-video.mp4" type="video/mp4">
-
-        Your browser does not support the video tag.
-
-    </video>
-
+    <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
-
 </body>
+
+<!-- Closing root element -->
 
 </html>
